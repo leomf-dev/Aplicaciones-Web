@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymleaf.org">
+	<meta charset="UTF-8">
+	<head>
+		
+	</head>
+	<body>
+		<h2>Lista de Roles</h2>
+		<table>
+			<tr>
+				<th>Rol ID</th>
+				<th>Nombre</th>
+				<th>Descripcion</th>
+				<th>Acciones</th>
+			</tr>
+			<tr th:each="r : ${roles}">
+				<td th:text="${r.rolID}"></td>
+				<td th:text="${r.nombre}"></td>
+				<td th:text="${r.descripcion}"></td>
+				<td>Actualizar</td>
+				<td>Eliminar</td>
+			</tr>
+		</table>
+	</body>
+</html>
