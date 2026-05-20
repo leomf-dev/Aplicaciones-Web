@@ -20,7 +20,7 @@ public interface RolClient {
 	List<Rol> listar();
 	@PostMapping("/insertar")
 	void insertar(@RequestBody Rol rol);
-	@PutMapping("/actualizar")
+	@PutMapping("/editar")
 	void actualizar(@RequestBody Rol rol);
 	@DeleteMapping("/eliminar/{id}")
 	void eliminar(@PathVariable int id);
